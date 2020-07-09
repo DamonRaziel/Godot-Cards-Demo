@@ -1,0 +1,92 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Scripts/MainMenu.gd" type="Script" id=1]
+[ext_resource path="res://ImagesOther/TableTextureOrange.png" type="Texture" id=2]
+[ext_resource path="res://Fonts/Cardo Font/CardoFont60.tres" type="DynamicFont" id=3]
+[ext_resource path="res://Fonts/Cardo Font/CardoFont30.tres" type="DynamicFont" id=4]
+[ext_resource path="res://Fonts/Cardo Font/CardoFont45.tres" type="DynamicFont" id=5]
+
+[node name="MainMenu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 2 )
+expand = true
+
+[node name="Title" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -195.5
+margin_top = -448.436
+margin_right = 195.5
+margin_bottom = -353.436
+custom_fonts/font = ExtResource( 3 )
+text = "Card Games Demo"
+align = 1
+valign = 1
+
+[node name="Basic5CardDrawButton" type="Button" parent="Title"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -190.0
+margin_top = 97.5
+margin_right = 190.0
+margin_bottom = 173.5
+custom_fonts/font = ExtResource( 5 )
+text = "Basic 5 Card Draw"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="5CardDrawButton" type="Button" parent="Title"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -190.0
+margin_top = 150.0
+margin_right = 190.0
+margin_bottom = 226.0
+custom_fonts/font = ExtResource( 5 )
+text = "5 Card Draw"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HoldEmButton" type="Button" parent="Title"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -190.0
+margin_top = 250.0
+margin_right = 190.0
+margin_bottom = 326.0
+custom_fonts/font = ExtResource( 5 )
+text = "Hold 'Em"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Disclaimer" type="Label" parent="Title"]
+margin_left = -697.0
+margin_top = 844.0
+margin_right = 1094.0
+margin_bottom = 973.0
+custom_fonts/font = ExtResource( 4 )
+text = "Disclaimer. This project is for fun, not a serious card game platform. This was created to simulate card games, 1) for fun, and 2) as mini games within other games. I am sure there are better (or \"proper\" for betting/poker) ways of doing things.
+I hope you enjoy."
+align = 1
+valign = 1
+autowrap = true
+[connection signal="pressed" from="Title/Basic5CardDrawButton" to="." method="_on_Basic5CardDrawButton_pressed"]
+[connection signal="pressed" from="Title/5CardDrawButton" to="." method="_on_5CardDrawButton_pressed"]
+[connection signal="pressed" from="Title/HoldEmButton" to="." method="_on_HoldEmButton_pressed"]

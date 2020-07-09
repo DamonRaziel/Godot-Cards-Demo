@@ -1,0 +1,488 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Fonts/Cardo Font/CardoFont60.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Scripts/5CardDrawPokerBasic.gd" type="Script" id=2]
+[ext_resource path="res://ImagesOther/TableTextureGreen.png" type="Texture" id=3]
+[ext_resource path="res://CardImages/CardsBack.png" type="Texture" id=4]
+[ext_resource path="res://Fonts/Cardo Font/CardoFont45.tres" type="DynamicFont" id=5]
+[ext_resource path="res://ImagesOther/TableTextureOrange.png" type="Texture" id=6]
+
+[node name="MainContainer" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BGTexture" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DeckStuff" type="Control" parent="."]
+margin_left = 1451.47
+margin_top = 778.029
+margin_right = 1491.47
+margin_bottom = 818.029
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DeckCard1" type="TextureRect" parent="DeckStuff"]
+margin_left = 6.10352e-05
+margin_top = 34.0811
+margin_right = 154.0
+margin_bottom = 248.081
+texture = ExtResource( 4 )
+expand = true
+
+[node name="DeckCard2" type="TextureRect" parent="DeckStuff"]
+margin_left = 34.6821
+margin_top = 34.0811
+margin_right = 188.682
+margin_bottom = 248.081
+texture = ExtResource( 4 )
+expand = true
+
+[node name="DeckCard3" type="TextureRect" parent="DeckStuff"]
+margin_left = 69.631
+margin_top = 34.0811
+margin_right = 223.631
+margin_bottom = 248.081
+texture = ExtResource( 4 )
+expand = true
+
+[node name="DeckCard4" type="TextureRect" parent="DeckStuff"]
+margin_left = 103.788
+margin_top = 34.0811
+margin_right = 257.788
+margin_bottom = 248.081
+texture = ExtResource( 4 )
+expand = true
+
+[node name="DeckCard5" type="TextureRect" parent="DeckStuff"]
+margin_left = 136.359
+margin_top = 34.0811
+margin_right = 290.359
+margin_bottom = 248.081
+texture = ExtResource( 4 )
+expand = true
+
+[node name="DeckCardsLabel" type="Label" parent="DeckStuff"]
+margin_top = -59.2198
+margin_right = 189.0
+margin_bottom = 10.7802
+custom_fonts/font = ExtResource( 5 )
+text = "Deck Cards"
+
+[node name="PlayerStuff" type="Control" parent="."]
+margin_left = 56.1061
+margin_top = 778.029
+margin_right = 96.1061
+margin_bottom = 818.029
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PlayerCard1" type="TextureRect" parent="PlayerStuff"]
+margin_left = 6.10352e-05
+margin_top = 34.0811
+margin_right = 154.0
+margin_bottom = 248.081
+texture = ExtResource( 4 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PlayerCard1Label" type="Label" parent="PlayerStuff/PlayerCard1"]
+anchor_right = 1.0
+margin_bottom = 70.0
+custom_fonts/font = ExtResource( 5 )
+text = "10"
+align = 1
+valign = 1
+
+[node name="PlayerCard2" type="TextureRect" parent="PlayerStuff"]
+margin_left = 176.7
+margin_top = 34.0811
+margin_right = 330.7
+margin_bottom = 248.081
+texture = ExtResource( 4 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PlayerCard2Label" type="Label" parent="PlayerStuff/PlayerCard2"]
+anchor_right = 1.0
+margin_bottom = 70.0
+custom_fonts/font = ExtResource( 5 )
+text = "10"
+align = 1
+valign = 1
+
+[node name="PlayerCard3" type="TextureRect" parent="PlayerStuff"]
+margin_left = 354.35
+margin_top = 34.0811
+margin_right = 508.35
+margin_bottom = 248.081
+texture = ExtResource( 4 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PlayerCard3Label" type="Label" parent="PlayerStuff/PlayerCard3"]
+anchor_right = 1.0
+margin_bottom = 70.0
+custom_fonts/font = ExtResource( 5 )
+text = "10"
+align = 1
+valign = 1
+
+[node name="PlayerCard4" type="TextureRect" parent="PlayerStuff"]
+margin_left = 536.21
+margin_top = 34.0811
+margin_right = 690.21
+margin_bottom = 248.081
+texture = ExtResource( 4 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PlayerCard4Label" type="Label" parent="PlayerStuff/PlayerCard4"]
+anchor_right = 1.0
+margin_bottom = 70.0
+custom_fonts/font = ExtResource( 5 )
+text = "10"
+align = 1
+valign = 1
+
+[node name="PlayerCard5" type="TextureRect" parent="PlayerStuff"]
+margin_left = 722.367
+margin_top = 34.0811
+margin_right = 876.367
+margin_bottom = 248.081
+texture = ExtResource( 4 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PlayerCard5Label" type="Label" parent="PlayerStuff/PlayerCard5"]
+anchor_right = 1.0
+margin_bottom = 70.0
+custom_fonts/font = ExtResource( 5 )
+text = "10"
+align = 1
+valign = 1
+
+[node name="PlayerCardsLabel" type="Label" parent="PlayerStuff"]
+margin_top = -59.2198
+margin_right = 189.0
+margin_bottom = 10.7802
+custom_fonts/font = ExtResource( 5 )
+text = "Player Cards"
+
+[node name="Comp1Stuff" type="Control" parent="."]
+margin_left = 1008.11
+margin_top = 91.5836
+margin_right = 1048.11
+margin_bottom = 131.584
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Comp1Card1" type="TextureRect" parent="Comp1Stuff"]
+margin_left = 6.10352e-05
+margin_top = 34.0811
+margin_right = 154.0
+margin_bottom = 248.081
+texture = ExtResource( 4 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Comp1Card1Label" type="Label" parent="Comp1Stuff/Comp1Card1"]
+anchor_right = 1.0
+margin_bottom = 70.0
+custom_fonts/font = ExtResource( 5 )
+text = "10"
+align = 1
+valign = 1
+
+[node name="Comp1Card2" type="TextureRect" parent="Comp1Stuff"]
+margin_left = 176.7
+margin_top = 34.0811
+margin_right = 330.7
+margin_bottom = 248.081
+texture = ExtResource( 4 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Comp1Card2Label" type="Label" parent="Comp1Stuff/Comp1Card2"]
+anchor_right = 1.0
+margin_bottom = 70.0
+custom_fonts/font = ExtResource( 5 )
+text = "10"
+align = 1
+valign = 1
+
+[node name="Comp1Card3" type="TextureRect" parent="Comp1Stuff"]
+margin_left = 354.35
+margin_top = 34.0811
+margin_right = 508.35
+margin_bottom = 248.081
+texture = ExtResource( 4 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Comp1Card3Label" type="Label" parent="Comp1Stuff/Comp1Card3"]
+anchor_right = 1.0
+margin_bottom = 70.0
+custom_fonts/font = ExtResource( 5 )
+text = "10"
+align = 1
+valign = 1
+
+[node name="Comp1Card4" type="TextureRect" parent="Comp1Stuff"]
+margin_left = 536.21
+margin_top = 34.0811
+margin_right = 690.21
+margin_bottom = 248.081
+texture = ExtResource( 4 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Comp1Card4Label" type="Label" parent="Comp1Stuff/Comp1Card4"]
+anchor_right = 1.0
+margin_bottom = 70.0
+custom_fonts/font = ExtResource( 5 )
+text = "10"
+align = 1
+valign = 1
+
+[node name="Comp1Card5" type="TextureRect" parent="Comp1Stuff"]
+margin_left = 722.367
+margin_top = 34.0811
+margin_right = 876.367
+margin_bottom = 248.081
+texture = ExtResource( 4 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Comp1Card5Label" type="Label" parent="Comp1Stuff/Comp1Card5"]
+anchor_right = 1.0
+margin_bottom = 70.0
+custom_fonts/font = ExtResource( 5 )
+text = "10"
+align = 1
+valign = 1
+
+[node name="Comp1CardsLabel" type="Label" parent="Comp1Stuff"]
+margin_top = -59.2198
+margin_right = 189.0
+margin_bottom = 10.7802
+custom_fonts/font = ExtResource( 5 )
+text = "Computer 1 Cards"
+
+[node name="DisplayStuff" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="CardsRevealDisplay" type="Label" parent="DisplayStuff"]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = -134.29
+margin_bottom = -64.2896
+custom_fonts/font = ExtResource( 5 )
+text = "Player Cards Were : "
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="WinnerRevealDisplay" type="Label" parent="DisplayStuff"]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = -47.5
+margin_bottom = 47.5
+custom_fonts/font = ExtResource( 1 )
+text = "And the winner was : "
+align = 1
+valign = 1
+
+[node name="WinningHandRevealDisplay" type="Label" parent="DisplayStuff"]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = 68.6064
+margin_bottom = 138.606
+custom_fonts/font = ExtResource( 5 )
+text = "Winning hand was : "
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ButtonsContainer" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BackToMainButton" type="Button" parent="ButtonsContainer"]
+margin_left = 50.0
+margin_top = 50.0
+margin_right = 230.0
+margin_bottom = 126.0
+custom_fonts/font = ExtResource( 5 )
+text = "Main Menu"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="NewGameButton" type="Button" parent="ButtonsContainer"]
+margin_left = 50.0
+margin_top = 176.0
+margin_right = 287.0
+margin_bottom = 252.0
+custom_fonts/font = ExtResource( 5 )
+text = "New Game"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ReallyBackToMainBG" type="TextureRect" parent="ButtonsContainer"]
+margin_left = 339.459
+margin_top = 50.0
+margin_right = 536.459
+margin_bottom = 252.0
+texture = ExtResource( 6 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ExtraTab" type="TextureRect" parent="ButtonsContainer/ReallyBackToMainBG"]
+margin_left = -50.0
+margin_right = 3.8147e-06
+margin_bottom = 76.0
+texture = ExtResource( 6 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ReallyLabel" type="Label" parent="ButtonsContainer/ReallyBackToMainBG"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -52.5
+margin_top = -101.0
+margin_right = 52.5
+margin_bottom = -31.0
+custom_fonts/font = ExtResource( 5 )
+text = "Really?"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="YesMainButton" type="Button" parent="ButtonsContainer/ReallyBackToMainBG"]
+margin_left = 25.0
+margin_top = 126.0
+margin_right = 86.0
+margin_bottom = 202.0
+custom_fonts/font = ExtResource( 5 )
+text = "Yes"
+
+[node name="NoMainButton" type="Button" parent="ButtonsContainer/ReallyBackToMainBG"]
+margin_left = 111.0
+margin_top = 126.0
+margin_right = 172.0
+margin_bottom = 202.0
+custom_fonts/font = ExtResource( 5 )
+text = "No"
+
+[node name="ReallyNewGame" type="TextureRect" parent="ButtonsContainer"]
+margin_left = 339.459
+margin_top = 50.0
+margin_right = 536.459
+margin_bottom = 252.0
+texture = ExtResource( 6 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ExtraTabNG" type="TextureRect" parent="ButtonsContainer/ReallyNewGame"]
+margin_left = -50.0
+margin_top = 126.0
+margin_bottom = 202.0
+texture = ExtResource( 6 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ReallyLabelNG" type="Label" parent="ButtonsContainer/ReallyNewGame"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -52.5
+margin_top = -101.0
+margin_right = 52.5
+margin_bottom = -31.0
+custom_fonts/font = ExtResource( 5 )
+text = "Really?"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="YesNGButton" type="Button" parent="ButtonsContainer/ReallyNewGame"]
+margin_left = 25.0
+margin_top = 126.0
+margin_right = 86.0
+margin_bottom = 202.0
+custom_fonts/font = ExtResource( 5 )
+text = "Yes"
+
+[node name="NoNGButton" type="Button" parent="ButtonsContainer/ReallyNewGame"]
+margin_left = 111.0
+margin_top = 126.0
+margin_right = 172.0
+margin_bottom = 202.0
+custom_fonts/font = ExtResource( 5 )
+text = "No"
+[connection signal="pressed" from="ButtonsContainer/BackToMainButton" to="." method="_on_BackToMainButton_pressed"]
+[connection signal="pressed" from="ButtonsContainer/NewGameButton" to="." method="_on_NewGameButton_pressed"]
+[connection signal="pressed" from="ButtonsContainer/ReallyBackToMainBG/YesMainButton" to="." method="_on_YesMainButton_pressed"]
+[connection signal="pressed" from="ButtonsContainer/ReallyBackToMainBG/NoMainButton" to="." method="_on_NoMainButton_pressed"]
+[connection signal="pressed" from="ButtonsContainer/ReallyNewGame/YesNGButton" to="." method="_on_YesNGButton_pressed"]
+[connection signal="pressed" from="ButtonsContainer/ReallyNewGame/NoNGButton" to="." method="_on_NoNGButton_pressed"]
