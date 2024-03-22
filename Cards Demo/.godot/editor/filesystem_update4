@@ -1,0 +1,4 @@
+res://default_env.tres
+res://Scenes/MainMenu.tscn
+res://Scripts/5CardDrawPokerMore.gd
+res://Scripts/HoldEm.gd

@@ -50,80 +50,80 @@ extends Control
 
 ### Setup variables for GUI ###
 # Textures for card display
-onready var cards_back = preload("res://CardImages/CardsBack.png")
-onready var hearts_texture = preload("res://CardImages/BaseHeart.png")
-onready var diamonds_texture = preload("res://CardImages/BaseDiamond.png")
-onready var spades_texture = preload("res://CardImages/BaseSpade.png")
-onready var clubs_texture = preload("res://CardImages/BaseClub.png")
+@onready var cards_back = preload("res://CardImages/CardsBack.png")
+@onready var hearts_texture = preload("res://CardImages/BaseHeart.png")
+@onready var diamonds_texture = preload("res://CardImages/BaseDiamond.png")
+@onready var spades_texture = preload("res://CardImages/BaseSpade.png")
+@onready var clubs_texture = preload("res://CardImages/BaseClub.png")
 
 # Player cards nodes
-onready var player_card1_image = get_node("PlayerStuff/PlayerCard1")
-onready var player_card2_image = get_node("PlayerStuff/PlayerCard2")
+@onready var player_card1_image = get_node("PlayerStuff/PlayerCard1")
+@onready var player_card2_image = get_node("PlayerStuff/PlayerCard2")
 
-onready var player_card1_label = get_node("PlayerStuff/PlayerCard1/PlayerCard1Label")
-onready var player_card2_label = get_node("PlayerStuff/PlayerCard2/PlayerCard2Label")
+@onready var player_card1_label = get_node("PlayerStuff/PlayerCard1/PlayerCard1Label")
+@onready var player_card2_label = get_node("PlayerStuff/PlayerCard2/PlayerCard2Label")
 
 # Computer 1 cards nodes
-onready var comp1_card1_image = get_node("Comp1Stuff/Comp1Card1")
-onready var comp1_card2_image = get_node("Comp1Stuff/Comp1Card2")
+@onready var comp1_card1_image = get_node("Comp1Stuff/Comp1Card1")
+@onready var comp1_card2_image = get_node("Comp1Stuff/Comp1Card2")
 
-onready var comp1_card1_label = get_node("Comp1Stuff/Comp1Card1/Comp1Card1Label")
-onready var comp1_card2_label = get_node("Comp1Stuff/Comp1Card2/Comp1Card2Label")
+@onready var comp1_card1_label = get_node("Comp1Stuff/Comp1Card1/Comp1Card1Label")
+@onready var comp1_card2_label = get_node("Comp1Stuff/Comp1Card2/Comp1Card2Label")
 
-onready var comp1_card1_change_indicator = get_node("Comp1Stuff/Comp1Card1/Comp1Card1ChangeIndicator")
-onready var comp1_card2_change_indicator = get_node("Comp1Stuff/Comp1Card2/Comp1Card2ChangeIndicator")
+@onready var comp1_card1_change_indicator = get_node("Comp1Stuff/Comp1Card1/Comp1Card1ChangeIndicator")
+@onready var comp1_card2_change_indicator = get_node("Comp1Stuff/Comp1Card2/Comp1Card2ChangeIndicator")
 
-onready var comp1_card1_image_hider = get_node("Comp1Stuff/Comp1Card1/Comp1Card1Hider")
-onready var comp1_card2_image_hider = get_node("Comp1Stuff/Comp1Card2/Comp1Card2Hider")
+@onready var comp1_card1_image_hider = get_node("Comp1Stuff/Comp1Card1/Comp1Card1Hider")
+@onready var comp1_card2_image_hider = get_node("Comp1Stuff/Comp1Card2/Comp1Card2Hider")
 
 # Community card nodes
-onready var comm_card1_image = get_node("CommunityStuff/CommCard1")
-onready var comm_card2_image = get_node("CommunityStuff/CommCard2")
-onready var comm_card3_image = get_node("CommunityStuff/CommCard3")
-onready var comm_card4_image = get_node("CommunityStuff/CommCard4")
-onready var comm_card5_image = get_node("CommunityStuff/CommCard5")
+@onready var comm_card1_image = get_node("CommunityStuff/CommCard1")
+@onready var comm_card2_image = get_node("CommunityStuff/CommCard2")
+@onready var comm_card3_image = get_node("CommunityStuff/CommCard3")
+@onready var comm_card4_image = get_node("CommunityStuff/CommCard4")
+@onready var comm_card5_image = get_node("CommunityStuff/CommCard5")
 
-onready var comm_card1_label = get_node("CommunityStuff/CommCard1/CommCard1Label")
-onready var comm_card2_label = get_node("CommunityStuff/CommCard2/CommCard2Label")
-onready var comm_card3_label = get_node("CommunityStuff/CommCard3/CommCard3Label")
-onready var comm_card4_label = get_node("CommunityStuff/CommCard4/CommCard4Label")
-onready var comm_card5_label = get_node("CommunityStuff/CommCard5/CommCard5Label")
+@onready var comm_card1_label = get_node("CommunityStuff/CommCard1/CommCard1Label")
+@onready var comm_card2_label = get_node("CommunityStuff/CommCard2/CommCard2Label")
+@onready var comm_card3_label = get_node("CommunityStuff/CommCard3/CommCard3Label")
+@onready var comm_card4_label = get_node("CommunityStuff/CommCard4/CommCard4Label")
+@onready var comm_card5_label = get_node("CommunityStuff/CommCard5/CommCard5Label")
 
-onready var comm_card1_image_hider = get_node("CommunityStuff/CommCard1/CommCard1Hider")
-onready var comm_card2_image_hider = get_node("CommunityStuff/CommCard2/CommCard2Hider")
-onready var comm_card3_image_hider = get_node("CommunityStuff/CommCard3/CommCard3Hider")
-onready var comm_card4_image_hider = get_node("CommunityStuff/CommCard4/CommCard4Hider")
-onready var comm_card5_image_hider = get_node("CommunityStuff/CommCard5/CommCard5Hider")
+@onready var comm_card1_image_hider = get_node("CommunityStuff/CommCard1/CommCard1Hider")
+@onready var comm_card2_image_hider = get_node("CommunityStuff/CommCard2/CommCard2Hider")
+@onready var comm_card3_image_hider = get_node("CommunityStuff/CommCard3/CommCard3Hider")
+@onready var comm_card4_image_hider = get_node("CommunityStuff/CommCard4/CommCard4Hider")
+@onready var comm_card5_image_hider = get_node("CommunityStuff/CommCard5/CommCard5Hider")
 
 # Burnt card nodes
-onready var burnt_card1_image = get_node("BurntCardsStuff/BurntCard1")
-onready var burnt_card2_image = get_node("BurntCardsStuff/BurntCard2")
-onready var burnt_card3_image = get_node("BurntCardsStuff/BurntCard3")
-onready var burnt_card4_image = get_node("BurntCardsStuff/BurntCard4")
-onready var burnt_card5_image = get_node("BurntCardsStuff/BurntCard5")
+@onready var burnt_card1_image = get_node("BurntCardsStuff/BurntCard1")
+@onready var burnt_card2_image = get_node("BurntCardsStuff/BurntCard2")
+@onready var burnt_card3_image = get_node("BurntCardsStuff/BurntCard3")
+@onready var burnt_card4_image = get_node("BurntCardsStuff/BurntCard4")
+@onready var burnt_card5_image = get_node("BurntCardsStuff/BurntCard5")
 
 # Display nodes
-onready var hands_display_text = get_node("DisplayStuff/CardsRevealDisplay")
-onready var winner_display_text = get_node("DisplayStuff/WinnerRevealDisplay")
-onready var winning_hand_display_text = get_node("DisplayStuff/WinningHandRevealDisplay")
-onready var winner_bg_texture = get_node("DisplayStuff/DisplayWinnerBG")
+@onready var hands_display_text = get_node("DisplayStuff/CardsRevealDisplay")
+@onready var winner_display_text = get_node("DisplayStuff/WinnerRevealDisplay")
+@onready var winning_hand_display_text = get_node("DisplayStuff/WinningHandRevealDisplay")
+@onready var winner_bg_texture = get_node("DisplayStuff/DisplayWinnerBG")
 
-onready var bet_cost_text = get_node("DisplayStuff/BetCostDisplay")
-onready var new_card_cost_text = get_node("DisplayStuff/NewCardCostDisplay")
-onready var current_pot_text = get_node("DisplayStuff/CurrentPotDisplay")
-onready var turn_counter_text = get_node("DisplayStuff/TurnCounterDisplay")
+@onready var bet_cost_text = get_node("DisplayStuff/BetCostDisplay")
+@onready var new_card_cost_text = get_node("DisplayStuff/NewCardCostDisplay")
+@onready var current_pot_text = get_node("DisplayStuff/CurrentPotDisplay")
+@onready var turn_counter_text = get_node("DisplayStuff/TurnCounterDisplay")
 
-onready var player_money_display = get_node("PlayerStuff/PlayerMoneyLabel")
-onready var comp1_money_display = get_node("Comp1Stuff/Comp1MoneyLabel")
+@onready var player_money_display = get_node("PlayerStuff/PlayerMoneyLabel")
+@onready var comp1_money_display = get_node("Comp1Stuff/Comp1MoneyLabel")
 
 # Set up the menu button nodes
-onready var back_to_main_menu = get_node("ButtonsContainer/ReallyBackToMainBG")
-onready var new_game_menu = get_node("ButtonsContainer/ReallyNewGame")
+@onready var back_to_main_menu = get_node("ButtonsContainer/ReallyBackToMainBG")
+@onready var new_game_menu = get_node("ButtonsContainer/ReallyNewGame")
 
 # Set up the player action nodes
-onready var player_fold_button = get_node("ButtonsContainer/PlayerButtons/PlayerFoldButton")
-onready var player_bet_button = get_node("ButtonsContainer/PlayerButtons/PlayerBetButton")
-onready var player_place_button = get_node("ButtonsContainer/PlayerButtons/PlayerPlaceButton")
+@onready var player_fold_button = get_node("ButtonsContainer/PlayerButtons/PlayerFoldButton")
+@onready var player_bet_button = get_node("ButtonsContainer/PlayerButtons/PlayerBetButton")
+@onready var player_place_button = get_node("ButtonsContainer/PlayerButtons/PlayerPlaceButton")
 
 ### Set up vars for card set up ###
 
@@ -187,8 +187,8 @@ var player_money = 5000
 var comp1_money = 5000
 
 ### Set up the timers ###
-onready var comp1_decision_timer = get_node("Comp1Stuff/Comp1DecisionTimer")
-onready var comp1_bet_delay_timer = get_node("Comp1Stuff/Comp1GeneralDelayTimer")
+@onready var comp1_decision_timer = get_node("Comp1Stuff/Comp1DecisionTimer")
+@onready var comp1_bet_delay_timer = get_node("Comp1Stuff/Comp1GeneralDelayTimer")
 
 func _ready():
 	# Start a new game on load
@@ -595,7 +595,7 @@ func make_player_hand():
 		bi = values[vls[i]]+","+suites2[sts[i]]
 		print ("bi was : ", bi)
 		var card_to_remove_from_deck = game_deck.find(bi)
-		game_deck.remove(card_to_remove_from_deck)
+		game_deck.remove_at(card_to_remove_from_deck)
 		hand[i] = bi
 	hand1 = hand
 	# Could have done the last bit of for loop as "hand1[i] = bi" instead of using hand as a go between
@@ -635,7 +635,7 @@ func make_comp1_hand():
 		bi2 = values[vls2[i]]+","+suites2[sts2[i]]
 		print ("bi2 was : ", bi2)
 		var card_to_remove_from_deck2 = game_deck.find(bi2)
-		game_deck.remove(card_to_remove_from_deck2)
+		game_deck.remove_at(card_to_remove_from_deck2)
 		hand22[i] = bi2
 	hand2 = hand22
 	# Put comp1 cards "face down" for now, by hiding them behind other textures
@@ -675,7 +675,7 @@ func make_community_cards():
 		bi2_comm = values[vls2_comm[i]]+","+suites2[sts2_comm[i]]
 		print ("bi2_comm was : ", bi2_comm)
 		var card_to_remove_from_deck2_comm = game_deck.find(bi2_comm)
-		game_deck.remove(card_to_remove_from_deck2_comm)
+		game_deck.remove_at(card_to_remove_from_deck2_comm)
 		hand22_comm[i] = bi2_comm
 	hand_comm = hand22_comm
 	# Put comm cards "face down" for now, by hiding them behind other textures
@@ -818,7 +818,7 @@ func rank_the_(hand_sent):
 		if reps_array.count(2)==2:
 			# Two pair
 			#print ("two pair : ", ranks[2])
-			return [ranks[2], sorted_vals, reps_array.find(2), reps_array.find_last(2)]
+			return [ranks[2], sorted_vals, reps_array.find(2), reps_array.rfind(2)]
 		if reps_array.count(2)==1:
 			# One pair
 			#print ("one pair : ", ranks[1])

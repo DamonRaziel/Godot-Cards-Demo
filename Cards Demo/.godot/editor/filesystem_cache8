@@ -1,0 +1,101 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1711127034
+default_env.tres::Environment::-1::1711127011::0::1::::<><>::
+icon.png::CompressedTexture2D::4566243370572004718::1577630780::1711127036::1::::<><>::
+::res://CardImages/::1711126928
+BaseClub.png::CompressedTexture2D::336120233748930749::1589576712::1711127037::1::::<><>::
+BaseDiamond.png::CompressedTexture2D::1071774515954982347::1589576893::1711127037::1::::<><>::
+BaseHeart.png::CompressedTexture2D::8837865461592921884::1589576803::1711127037::1::::<><>::
+BaseSpade.png::CompressedTexture2D::9138849314855005781::1589576735::1711127037::1::::<><>::
+BlankSpace.png::CompressedTexture2D::7912360505234635140::1577931563::1711127037::1::::<><>::
+CardsBack.png::CompressedTexture2D::341187771813189970::1577931943::1711127037::1::::<><>::
+Clubs2.png::CompressedTexture2D::6339038114620082785::1577672692::1711127036::1::::<><>::
+Clubs3.png::CompressedTexture2D::884193545150429472::1577673112::1711127036::1::::<><>::
+Clubs4.png::CompressedTexture2D::1286814811478009478::1577673680::1711127036::1::::<><>::
+Clubs5.png::CompressedTexture2D::3434765723122268228::1577799245::1711127036::1::::<><>::
+Clubs6.png::CompressedTexture2D::8527295358890213518::1577799966::1711127036::1::::<><>::
+Clubs7.png::CompressedTexture2D::8958968142478821039::1577809132::1711127036::1::::<><>::
+Clubs8.png::CompressedTexture2D::4463902996077193889::1577809913::1711127036::1::::<><>::
+Clubs9.png::CompressedTexture2D::6578985585445393564::1577810142::1711127036::1::::<><>::
+Clubs10.png::CompressedTexture2D::2602188208544317844::1577810363::1711127036::1::::<><>::
+ClubsAce.png::CompressedTexture2D::6968851647702003518::1577672231::1711127036::1::::<><>::
+ClubsJack.png::CompressedTexture2D::3586979249761885222::1577931224::1711127036::1::::<><>::
+ClubsKing.png::CompressedTexture2D::6664478315821471755::1577931274::1711127036::1::::<><>::
+ClubsQueen.png::CompressedTexture2D::1948839033890335632::1577931251::1711127037::1::::<><>::
+Diamonds2.png::CompressedTexture2D::8955846941081711909::1577672351::1711127037::1::::<><>::
+Diamonds3.png::CompressedTexture2D::8505833492570418705::1577672982::1711127037::1::::<><>::
+Diamonds4.png::CompressedTexture2D::3148197352704376488::1577673419::1711127037::1::::<><>::
+Diamonds5.png::CompressedTexture2D::6517373188828244020::1577798684::1711127037::1::::<><>::
+Diamonds6.png::CompressedTexture2D::5209053837757446125::1577799699::1711127037::1::::<><>::
+Diamonds7.png::CompressedTexture2D::6405007557130508118::1577808954::1711127037::1::::<><>::
+Diamonds8.png::CompressedTexture2D::4686564752772875330::1577809536::1711127037::1::::<><>::
+Diamonds9.png::CompressedTexture2D::7346022412654370960::1577810032::1711127037::1::::<><>::
+Diamonds10.png::CompressedTexture2D::6767457481432291114::1577810227::1711127037::1::::<><>::
+DiamondsAce.png::CompressedTexture2D::7071961542876925334::1577672168::1711127037::1::::<><>::
+DiamondsJack.png::CompressedTexture2D::4471376008691271978::1577930820::1711127037::1::::<><>::
+DiamondsKing.png::CompressedTexture2D::2304426336460017298::1577930885::1711127037::1::::<><>::
+DiamondsQueen.png::CompressedTexture2D::8483407449028726019::1577930853::1711127037::1::::<><>::
+Hearts2.png::CompressedTexture2D::7962230030038397652::1577672564::1711127037::1::::<><>::
+Hearts3.png::CompressedTexture2D::1274656376460783520::1577672902::1711127037::1::::<><>::
+Hearts4.png::CompressedTexture2D::3637070606747424426::1577673494::1711127037::1::::<><>::
+Hearts5.png::CompressedTexture2D::7161215437563190861::1577798836::1711127037::1::::<><>::
+Hearts6.png::CompressedTexture2D::7243844742325162535::1577799642::1711127037::1::::<><>::
+Hearts7.png::CompressedTexture2D::2670536163373265209::1577809019::1711127036::1::::<><>::
+Hearts8.png::CompressedTexture2D::5812238882286046942::1577809826::1711127036::1::::<><>::
+Hearts9.png::CompressedTexture2D::6576186691538988066::1577810071::1711127036::1::::<><>::
+Hearts10.png::CompressedTexture2D::1692730003025928716::1577810275::1711127036::1::::<><>::
+HeartsAce.png::CompressedTexture2D::7741288949195950604::1577672182::1711127036::1::::<><>::
+HeartsJack.png::CompressedTexture2D::4170615694035777690::1577930980::1711127036::1::::<><>::
+HeartsKing.png::CompressedTexture2D::7159531805077287376::1577931040::1711127036::1::::<><>::
+HeartsQueen.png::CompressedTexture2D::8212970599571815397::1577931009::1711127036::1::::<><>::
+Spades2.png::CompressedTexture2D::4113078144987237600::1577672636::1711127036::1::::<><>::
+Spades3.png::CompressedTexture2D::6188750923134390769::1577673063::1711127036::1::::<><>::
+Spades4.png::CompressedTexture2D::6760632522284609204::1577673609::1711127036::1::::<><>::
+Spades5.png::CompressedTexture2D::6814962550980267899::1577799026::1711127036::1::::<><>::
+Spades6.png::CompressedTexture2D::510619951084627974::1577799879::1711127036::1::::<><>::
+Spades7.png::CompressedTexture2D::9037756262026434551::1577809088::1711127036::1::::<><>::
+Spades8.png::CompressedTexture2D::5307828419134110728::1577809856::1711127036::1::::<><>::
+Spades9.png::CompressedTexture2D::6179189232768683180::1577810111::1711127036::1::::<><>::
+Spades10.png::CompressedTexture2D::4894154572631595821::1577810322::1711127036::1::::<><>::
+SpadesAce.png::CompressedTexture2D::1115310441052620147::1577672210::1711127036::1::::<><>::
+SpadesJack.png::CompressedTexture2D::7093007719958435552::1577931116::1711127036::1::::<><>::
+SpadesKing.png::CompressedTexture2D::7296758624835939185::1577931173::1711127036::1::::<><>::
+SpadesQueen.png::CompressedTexture2D::1896321193598072642::1577931151::1711127036::1::::<><>::
+::res://Fonts/::1711126928
+ACharmingFontExt35.tres::FontFile::-1::1711127011::0::1::::<><>::res://Fonts/A Charming Font/Achafexp.ttf
+ACharmingFontExt55.tres::FontFile::-1::1711127011::0::1::::<><>::res://Fonts/A Charming Font/Achafexp.ttf
+ACharmingFontExt75.tres::FontFile::-1::1711127011::0::1::::<><>::res://Fonts/A Charming Font/Achafexp.ttf
+FREEBSCA.ttf::FontFile::8484442468302887704::1577632138::1711127036::1::::<><>::
+FREEBSCcopy_.ttf::FontFile::6023086566532347553::1577632223::1711127036::1::::<><>::
+FREEBSC_.ttf::FontFile::4678018177321734971::1577632138::1711127036::1::::<><>::
+::res://Fonts/A Charming Font/::1711126928
+1001fonts-a-charming-font-eula.txt::TextFile::-1::1540282864::0::1::::<><>::
+Achafexp.ttf::FontFile::3519554675959292330::1256127140::1711127036::1::::<><>::
+Achafita.ttf::FontFile::8350481253163089932::1256127128::1711127036::1::::<><>::
+Achaflft.ttf::FontFile::3335252903327507772::1256127114::1711127036::1::::<><>::
+Achafont.ttf::FontFile::2241782734369090081::1256127100::1711127036::1::::<><>::
+Achafout.ttf::FontFile::1714141422783874343::1256127086::1711127036::1::::<><>::
+Achafsex.ttf::FontFile::7467831399412596923::1256127068::1711127036::1::::<><>::
+::res://Fonts/Cardo Font/::1711126928
+Cardo-Bold.ttf::FontFile::728576219479788142::1578181431::1711127036::1::::<><>::
+Cardo-Italic.ttf::FontFile::401427690791964406::1578181431::1711127036::1::::<><>::
+Cardo-Regular.ttf::FontFile::7943195077840055045::1578181431::1711127036::1::::<><>::
+CardoFont30.tres::FontFile::-1::1711127011::0::1::::<><>::res://Fonts/Cardo Font/Cardo-Regular.ttf
+CardoFont45.tres::FontFile::-1::1711127011::0::1::::<><>::res://Fonts/Cardo Font/Cardo-Regular.ttf
+CardoFont60.tres::FontFile::-1::1711127011::0::1::::<><>::res://Fonts/Cardo Font/Cardo-Regular.ttf
+OFL.txt::TextFile::-1::1578181431::0::1::::<><>::
+::res://ImagesOther/::1711126928
+TableTextureGreen.png::CompressedTexture2D::6996287008626580021::1578020565::1711127036::1::::<><>::
+TableTextureOrange.png::CompressedTexture2D::7586074637784201918::1578020539::1711127036::1::::<><>::
+TurnIndicatorCyan.png::CompressedTexture2D::9148987743432620370::1578020620::1711127037::1::::<><>::
+::res://Scenes/::1711126928
+5CardDrawPokerBasic.tscn::PackedScene::-1::1711127011::0::1::::<><>::res://Fonts/Cardo Font/CardoFont60.tres<>res://Scripts/5CardDrawPokerBasic.gd<>res://ImagesOther/TableTextureGreen.png<>res://CardImages/CardsBack.png<>res://Fonts/Cardo Font/CardoFont45.tres<>res://ImagesOther/TableTextureOrange.png
+5CardDrawPokerMore.tscn::PackedScene::-1::1711127011::0::1::::<><>::res://Fonts/Cardo Font/CardoFont60.tres<>res://Scripts/5CardDrawPokerMore.gd<>res://ImagesOther/TableTextureGreen.png<>res://CardImages/CardsBack.png<>res://Fonts/Cardo Font/CardoFont30.tres<>res://ImagesOther/TableTextureOrange.png<>res://ImagesOther/TurnIndicatorCyan.png<>res://Fonts/Cardo Font/CardoFont45.tres
+HoldEm.tscn::PackedScene::-1::1711127011::0::1::::<><>::res://Fonts/Cardo Font/CardoFont60.tres<>res://Scripts/HoldEm.gd<>res://ImagesOther/TableTextureGreen.png<>res://CardImages/CardsBack.png<>res://Fonts/Cardo Font/CardoFont30.tres<>res://ImagesOther/TableTextureOrange.png<>res://Fonts/Cardo Font/CardoFont45.tres
+MainMenu.tscn::PackedScene::-1::1711127011::0::1::::<><>::res://Scripts/MainMenu.gd<>res://ImagesOther/TableTextureOrange.png<>res://Fonts/Cardo Font/CardoFont60.tres<>res://Fonts/Cardo Font/CardoFont30.tres<>res://Fonts/Cardo Font/CardoFont45.tres
+::res://Scripts/::1711126928
+5CardDrawPokerBasic.gd::GDScript::-1::1711127011::0::1::::<>Control<>::
+5CardDrawPokerMore.gd::GDScript::-1::1711127011::0::1::::<>Control<>::
+HoldEm.gd::GDScript::-1::1711127011::0::1::::<>Control<>::
+MainMenu.gd::GDScript::-1::1711127011::0::1::::<>Control<>::
+MasterControl.gd::GDScript::-1::1711127011::0::1::::<>Node<>::

@@ -200,7 +200,7 @@ func _deferred_goto_scene(path):
 	#load new scene here
 	var s = ResourceLoader.load(path)
 	#instance the new scene
-	current_scene = s.instance()
+	current_scene = s.instantiate()
 	#add to the active scene, as a child of root
 	get_tree().get_root().add_child(current_scene)
 	#optional to make compatible with the scenetree change scene API
@@ -208,7 +208,7 @@ func _deferred_goto_scene(path):
 
 #from background loader examples, for loading bigger scenes
 func goto_scene_bg(path): # game requests to switch to this scene
-	loader = ResourceLoader.load_interactive(path)
+	loader = ResourceLoader.load_threaded_request(path)
 	if loader == null: # check for errors
 		#show_error()
 		return
@@ -228,8 +228,8 @@ func _process(time):
 	if wait_frames > 0: # wait for frames to let the "loading" animation to show up
 		wait_frames -= 1
 		return
-	var t = OS.get_ticks_msec()
-	while OS.get_ticks_msec() < t + time_max: # use "time_max" to control how much time we block this thread
+	var t = Time.get_ticks_msec()
+	while Time.get_ticks_msec() < t + time_max: # use "time_max" to control how much time we block this thread
 		# poll your loader
 		var err = loader.poll()
 		if err == OK: # if loading
@@ -264,7 +264,7 @@ func update_progress():
 
 func set_new_scene(scene_resource):
 	current_scene.queue_free() #get rid of the old scene here instead
-	current_scene = scene_resource.instance() #then immediately replace with the loaded scene
+	current_scene = scene_resource.instantiate() #then immediately replace with the loaded scene
 	get_node("/root").add_child(current_scene)
 
 

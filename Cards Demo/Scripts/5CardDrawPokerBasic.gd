@@ -11,46 +11,46 @@ extends Control
 
 ### Setup variables for GUI ###
 # Textures for card display
-onready var cards_back = preload("res://CardImages/CardsBack.png")
-onready var hearts_texture = preload("res://CardImages/BaseHeart.png")
-onready var diamonds_texture = preload("res://CardImages/BaseDiamond.png")
-onready var spades_texture = preload("res://CardImages/BaseSpade.png")
-onready var clubs_texture = preload("res://CardImages/BaseClub.png")
+@onready var cards_back = preload("res://CardImages/CardsBack.png")
+@onready var hearts_texture = preload("res://CardImages/BaseHeart.png")
+@onready var diamonds_texture = preload("res://CardImages/BaseDiamond.png")
+@onready var spades_texture = preload("res://CardImages/BaseSpade.png")
+@onready var clubs_texture = preload("res://CardImages/BaseClub.png")
 
 # Player cards nodes
-onready var player_card1_image = get_node("PlayerStuff/PlayerCard1")
-onready var player_card2_image = get_node("PlayerStuff/PlayerCard2")
-onready var player_card3_image = get_node("PlayerStuff/PlayerCard3")
-onready var player_card4_image = get_node("PlayerStuff/PlayerCard4")
-onready var player_card5_image = get_node("PlayerStuff/PlayerCard5")
+@onready var player_card1_image = get_node("PlayerStuff/PlayerCard1")
+@onready var player_card2_image = get_node("PlayerStuff/PlayerCard2")
+@onready var player_card3_image = get_node("PlayerStuff/PlayerCard3")
+@onready var player_card4_image = get_node("PlayerStuff/PlayerCard4")
+@onready var player_card5_image = get_node("PlayerStuff/PlayerCard5")
 
-onready var player_card1_label = get_node("PlayerStuff/PlayerCard1/PlayerCard1Label")
-onready var player_card2_label = get_node("PlayerStuff/PlayerCard2/PlayerCard2Label")
-onready var player_card3_label = get_node("PlayerStuff/PlayerCard3/PlayerCard3Label")
-onready var player_card4_label = get_node("PlayerStuff/PlayerCard4/PlayerCard4Label")
-onready var player_card5_label = get_node("PlayerStuff/PlayerCard5/PlayerCard5Label")
+@onready var player_card1_label = get_node("PlayerStuff/PlayerCard1/PlayerCard1Label")
+@onready var player_card2_label = get_node("PlayerStuff/PlayerCard2/PlayerCard2Label")
+@onready var player_card3_label = get_node("PlayerStuff/PlayerCard3/PlayerCard3Label")
+@onready var player_card4_label = get_node("PlayerStuff/PlayerCard4/PlayerCard4Label")
+@onready var player_card5_label = get_node("PlayerStuff/PlayerCard5/PlayerCard5Label")
 
 # Computer 1 cards nodes
-onready var comp1_card1_image = get_node("Comp1Stuff/Comp1Card1")
-onready var comp1_card2_image = get_node("Comp1Stuff/Comp1Card2")
-onready var comp1_card3_image = get_node("Comp1Stuff/Comp1Card3")
-onready var comp1_card4_image = get_node("Comp1Stuff/Comp1Card4")
-onready var comp1_card5_image = get_node("Comp1Stuff/Comp1Card5")
+@onready var comp1_card1_image = get_node("Comp1Stuff/Comp1Card1")
+@onready var comp1_card2_image = get_node("Comp1Stuff/Comp1Card2")
+@onready var comp1_card3_image = get_node("Comp1Stuff/Comp1Card3")
+@onready var comp1_card4_image = get_node("Comp1Stuff/Comp1Card4")
+@onready var comp1_card5_image = get_node("Comp1Stuff/Comp1Card5")
 
-onready var comp1_card1_label = get_node("Comp1Stuff/Comp1Card1/Comp1Card1Label")
-onready var comp1_card2_label = get_node("Comp1Stuff/Comp1Card2/Comp1Card2Label")
-onready var comp1_card3_label = get_node("Comp1Stuff/Comp1Card3/Comp1Card3Label")
-onready var comp1_card4_label = get_node("Comp1Stuff/Comp1Card4/Comp1Card4Label")
-onready var comp1_card5_label = get_node("Comp1Stuff/Comp1Card5/Comp1Card5Label")
+@onready var comp1_card1_label = get_node("Comp1Stuff/Comp1Card1/Comp1Card1Label")
+@onready var comp1_card2_label = get_node("Comp1Stuff/Comp1Card2/Comp1Card2Label")
+@onready var comp1_card3_label = get_node("Comp1Stuff/Comp1Card3/Comp1Card3Label")
+@onready var comp1_card4_label = get_node("Comp1Stuff/Comp1Card4/Comp1Card4Label")
+@onready var comp1_card5_label = get_node("Comp1Stuff/Comp1Card5/Comp1Card5Label")
 
 # Display nodes
-onready var hands_display_text = get_node("DisplayStuff/CardsRevealDisplay")
-onready var winner_display_text = get_node("DisplayStuff/WinnerRevealDisplay")
-onready var winning_hand_display_text = get_node("DisplayStuff/WinningHandRevealDisplay")
+@onready var hands_display_text = get_node("DisplayStuff/CardsRevealDisplay")
+@onready var winner_display_text = get_node("DisplayStuff/WinnerRevealDisplay")
+@onready var winning_hand_display_text = get_node("DisplayStuff/WinningHandRevealDisplay")
 
 # Set up the menu button nodes
-onready var back_to_main_menu = get_node("ButtonsContainer/ReallyBackToMainBG")
-onready var new_game_menu = get_node("ButtonsContainer/ReallyNewGame")
+@onready var back_to_main_menu = get_node("ButtonsContainer/ReallyBackToMainBG")
+@onready var new_game_menu = get_node("ButtonsContainer/ReallyNewGame")
 
 # Set up vars for card set up
 var values = ["2","3","4","5","6","7","8","9","10","J","Q","K","A"]

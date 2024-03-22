@@ -45,83 +45,83 @@ extends Control
 
 ### Setup variables for GUI ###
 # Textures for card display
-onready var cards_back = preload("res://CardImages/CardsBack.png")
-onready var hearts_texture = preload("res://CardImages/BaseHeart.png")
-onready var diamonds_texture = preload("res://CardImages/BaseDiamond.png")
-onready var spades_texture = preload("res://CardImages/BaseSpade.png")
-onready var clubs_texture = preload("res://CardImages/BaseClub.png")
+@onready var cards_back = preload("res://CardImages/CardsBack.png")
+@onready var hearts_texture = preload("res://CardImages/BaseHeart.png")
+@onready var diamonds_texture = preload("res://CardImages/BaseDiamond.png")
+@onready var spades_texture = preload("res://CardImages/BaseSpade.png")
+@onready var clubs_texture = preload("res://CardImages/BaseClub.png")
 
 # Player cards nodes
-onready var player_card1_image = get_node("PlayerStuff/PlayerCard1")
-onready var player_card2_image = get_node("PlayerStuff/PlayerCard2")
-onready var player_card3_image = get_node("PlayerStuff/PlayerCard3")
-onready var player_card4_image = get_node("PlayerStuff/PlayerCard4")
-onready var player_card5_image = get_node("PlayerStuff/PlayerCard5")
+@onready var player_card1_image = get_node("PlayerStuff/PlayerCard1")
+@onready var player_card2_image = get_node("PlayerStuff/PlayerCard2")
+@onready var player_card3_image = get_node("PlayerStuff/PlayerCard3")
+@onready var player_card4_image = get_node("PlayerStuff/PlayerCard4")
+@onready var player_card5_image = get_node("PlayerStuff/PlayerCard5")
 
-onready var player_card1_label = get_node("PlayerStuff/PlayerCard1/PlayerCard1Label")
-onready var player_card2_label = get_node("PlayerStuff/PlayerCard2/PlayerCard2Label")
-onready var player_card3_label = get_node("PlayerStuff/PlayerCard3/PlayerCard3Label")
-onready var player_card4_label = get_node("PlayerStuff/PlayerCard4/PlayerCard4Label")
-onready var player_card5_label = get_node("PlayerStuff/PlayerCard5/PlayerCard5Label")
+@onready var player_card1_label = get_node("PlayerStuff/PlayerCard1/PlayerCard1Label")
+@onready var player_card2_label = get_node("PlayerStuff/PlayerCard2/PlayerCard2Label")
+@onready var player_card3_label = get_node("PlayerStuff/PlayerCard3/PlayerCard3Label")
+@onready var player_card4_label = get_node("PlayerStuff/PlayerCard4/PlayerCard4Label")
+@onready var player_card5_label = get_node("PlayerStuff/PlayerCard5/PlayerCard5Label")
 
 # Computer 1 cards nodes
-onready var comp1_card1_image = get_node("Comp1Stuff/Comp1Card1")
-onready var comp1_card2_image = get_node("Comp1Stuff/Comp1Card2")
-onready var comp1_card3_image = get_node("Comp1Stuff/Comp1Card3")
-onready var comp1_card4_image = get_node("Comp1Stuff/Comp1Card4")
-onready var comp1_card5_image = get_node("Comp1Stuff/Comp1Card5")
+@onready var comp1_card1_image = get_node("Comp1Stuff/Comp1Card1")
+@onready var comp1_card2_image = get_node("Comp1Stuff/Comp1Card2")
+@onready var comp1_card3_image = get_node("Comp1Stuff/Comp1Card3")
+@onready var comp1_card4_image = get_node("Comp1Stuff/Comp1Card4")
+@onready var comp1_card5_image = get_node("Comp1Stuff/Comp1Card5")
 
-onready var comp1_card1_label = get_node("Comp1Stuff/Comp1Card1/Comp1Card1Label")
-onready var comp1_card2_label = get_node("Comp1Stuff/Comp1Card2/Comp1Card2Label")
-onready var comp1_card3_label = get_node("Comp1Stuff/Comp1Card3/Comp1Card3Label")
-onready var comp1_card4_label = get_node("Comp1Stuff/Comp1Card4/Comp1Card4Label")
-onready var comp1_card5_label = get_node("Comp1Stuff/Comp1Card5/Comp1Card5Label")
+@onready var comp1_card1_label = get_node("Comp1Stuff/Comp1Card1/Comp1Card1Label")
+@onready var comp1_card2_label = get_node("Comp1Stuff/Comp1Card2/Comp1Card2Label")
+@onready var comp1_card3_label = get_node("Comp1Stuff/Comp1Card3/Comp1Card3Label")
+@onready var comp1_card4_label = get_node("Comp1Stuff/Comp1Card4/Comp1Card4Label")
+@onready var comp1_card5_label = get_node("Comp1Stuff/Comp1Card5/Comp1Card5Label")
 
-onready var comp1_card1_change_indicator = get_node("Comp1Stuff/Comp1Card1/Comp1Card1ChangeIndicator")
-onready var comp1_card2_change_indicator = get_node("Comp1Stuff/Comp1Card2/Comp1Card2ChangeIndicator")
-onready var comp1_card3_change_indicator = get_node("Comp1Stuff/Comp1Card3/Comp1Card3ChangeIndicator")
-onready var comp1_card4_change_indicator = get_node("Comp1Stuff/Comp1Card4/Comp1Card4ChangeIndicator")
-onready var comp1_card5_change_indicator = get_node("Comp1Stuff/Comp1Card5/Comp1Card5ChangeIndicator")
+@onready var comp1_card1_change_indicator = get_node("Comp1Stuff/Comp1Card1/Comp1Card1ChangeIndicator")
+@onready var comp1_card2_change_indicator = get_node("Comp1Stuff/Comp1Card2/Comp1Card2ChangeIndicator")
+@onready var comp1_card3_change_indicator = get_node("Comp1Stuff/Comp1Card3/Comp1Card3ChangeIndicator")
+@onready var comp1_card4_change_indicator = get_node("Comp1Stuff/Comp1Card4/Comp1Card4ChangeIndicator")
+@onready var comp1_card5_change_indicator = get_node("Comp1Stuff/Comp1Card5/Comp1Card5ChangeIndicator")
 
-onready var comp1_card1_image_hider = get_node("Comp1Stuff/Comp1Card1/Comp1Card1Hider")
-onready var comp1_card2_image_hider = get_node("Comp1Stuff/Comp1Card2/Comp1Card2Hider")
-onready var comp1_card3_image_hider = get_node("Comp1Stuff/Comp1Card3/Comp1Card3Hider")
-onready var comp1_card4_image_hider = get_node("Comp1Stuff/Comp1Card4/Comp1Card4Hider")
-onready var comp1_card5_image_hider = get_node("Comp1Stuff/Comp1Card5/Comp1Card5Hider")
+@onready var comp1_card1_image_hider = get_node("Comp1Stuff/Comp1Card1/Comp1Card1Hider")
+@onready var comp1_card2_image_hider = get_node("Comp1Stuff/Comp1Card2/Comp1Card2Hider")
+@onready var comp1_card3_image_hider = get_node("Comp1Stuff/Comp1Card3/Comp1Card3Hider")
+@onready var comp1_card4_image_hider = get_node("Comp1Stuff/Comp1Card4/Comp1Card4Hider")
+@onready var comp1_card5_image_hider = get_node("Comp1Stuff/Comp1Card5/Comp1Card5Hider")
 
 # Display nodes
-onready var hands_display_text = get_node("DisplayStuff/CardsRevealDisplay")
-onready var winner_display_text = get_node("DisplayStuff/WinnerRevealDisplay")
-onready var winning_hand_display_text = get_node("DisplayStuff/WinningHandRevealDisplay")
+@onready var hands_display_text = get_node("DisplayStuff/CardsRevealDisplay")
+@onready var winner_display_text = get_node("DisplayStuff/WinnerRevealDisplay")
+@onready var winning_hand_display_text = get_node("DisplayStuff/WinningHandRevealDisplay")
 
-onready var bet_cost_text = get_node("DisplayStuff/BetCostDisplay")
-onready var new_card_cost_text = get_node("DisplayStuff/NewCardCostDisplay")
-onready var current_pot_text = get_node("DisplayStuff/CurrentPotDisplay")
-onready var turn_counter_text = get_node("DisplayStuff/TurnCounterDisplay")
+@onready var bet_cost_text = get_node("DisplayStuff/BetCostDisplay")
+@onready var new_card_cost_text = get_node("DisplayStuff/NewCardCostDisplay")
+@onready var current_pot_text = get_node("DisplayStuff/CurrentPotDisplay")
+@onready var turn_counter_text = get_node("DisplayStuff/TurnCounterDisplay")
 
-onready var player_money_display = get_node("PlayerStuff/PlayerMoneyLabel")
-onready var comp1_money_display = get_node("Comp1Stuff/Comp1MoneyLabel")
+@onready var player_money_display = get_node("PlayerStuff/PlayerMoneyLabel")
+@onready var comp1_money_display = get_node("Comp1Stuff/Comp1MoneyLabel")
 
 # Set up the menu button nodes
-onready var back_to_main_menu = get_node("ButtonsContainer/ReallyBackToMainBG")
-onready var new_game_menu = get_node("ButtonsContainer/ReallyNewGame")
+@onready var back_to_main_menu = get_node("ButtonsContainer/ReallyBackToMainBG")
+@onready var new_game_menu = get_node("ButtonsContainer/ReallyNewGame")
 
 # Set up the player action nodes
-onready var player_card1_change_keep_button = get_node("ButtonsContainer/PlayerButtons/PlayerCard1ChangeKeepButton")
-onready var player_card2_change_keep_button = get_node("ButtonsContainer/PlayerButtons/PlayerCard2ChangeKeepButton")
-onready var player_card3_change_keep_button = get_node("ButtonsContainer/PlayerButtons/PlayerCard3ChangeKeepButton")
-onready var player_card4_change_keep_button = get_node("ButtonsContainer/PlayerButtons/PlayerCard4ChangeKeepButton")
-onready var player_card5_change_keep_button = get_node("ButtonsContainer/PlayerButtons/PlayerCard5ChangeKeepButton")
+@onready var player_card1_change_keep_button = get_node("ButtonsContainer/PlayerButtons/PlayerCard1ChangeKeepButton")
+@onready var player_card2_change_keep_button = get_node("ButtonsContainer/PlayerButtons/PlayerCard2ChangeKeepButton")
+@onready var player_card3_change_keep_button = get_node("ButtonsContainer/PlayerButtons/PlayerCard3ChangeKeepButton")
+@onready var player_card4_change_keep_button = get_node("ButtonsContainer/PlayerButtons/PlayerCard4ChangeKeepButton")
+@onready var player_card5_change_keep_button = get_node("ButtonsContainer/PlayerButtons/PlayerCard5ChangeKeepButton")
 
-onready var player_card1_change_indicator = get_node("PlayerStuff/PlayerCard1/PlayerCard1ChangeIndicator")
-onready var player_card2_change_indicator = get_node("PlayerStuff/PlayerCard2/PlayerCard2ChangeIndicator")
-onready var player_card3_change_indicator = get_node("PlayerStuff/PlayerCard3/PlayerCard3ChangeIndicator")
-onready var player_card4_change_indicator = get_node("PlayerStuff/PlayerCard4/PlayerCard4ChangeIndicator")
-onready var player_card5_change_indicator = get_node("PlayerStuff/PlayerCard5/PlayerCard5ChangeIndicator")
+@onready var player_card1_change_indicator = get_node("PlayerStuff/PlayerCard1/PlayerCard1ChangeIndicator")
+@onready var player_card2_change_indicator = get_node("PlayerStuff/PlayerCard2/PlayerCard2ChangeIndicator")
+@onready var player_card3_change_indicator = get_node("PlayerStuff/PlayerCard3/PlayerCard3ChangeIndicator")
+@onready var player_card4_change_indicator = get_node("PlayerStuff/PlayerCard4/PlayerCard4ChangeIndicator")
+@onready var player_card5_change_indicator = get_node("PlayerStuff/PlayerCard5/PlayerCard5ChangeIndicator")
 
-onready var player_fold_button = get_node("ButtonsContainer/PlayerButtons/PlayerFoldButton")
-onready var player_bet_button = get_node("ButtonsContainer/PlayerButtons/PlayerBetButton")
-onready var player_place_button = get_node("ButtonsContainer/PlayerButtons/PlayerPlaceButton")
+@onready var player_fold_button = get_node("ButtonsContainer/PlayerButtons/PlayerFoldButton")
+@onready var player_bet_button = get_node("ButtonsContainer/PlayerButtons/PlayerBetButton")
+@onready var player_place_button = get_node("ButtonsContainer/PlayerButtons/PlayerPlaceButton")
 
 ### Set up vars for card set up ###
 
@@ -184,9 +184,9 @@ var player_money = 5000
 var comp1_money = 5000
 
 ### Set up the timers ###
-onready var comp1_decision_timer = get_node("Comp1Stuff/Comp1DecisionTimer")
-onready var comp1_change_timer = get_node("Comp1Stuff/Comp1ChangeTimer")
-onready var comp1_bet_delay_timer = get_node("Comp1Stuff/Comp1GeneralDelayTimer")
+@onready var comp1_decision_timer = get_node("Comp1Stuff/Comp1DecisionTimer")
+@onready var comp1_change_timer = get_node("Comp1Stuff/Comp1ChangeTimer")
+@onready var comp1_bet_delay_timer = get_node("Comp1Stuff/Comp1GeneralDelayTimer")
 
 func _ready():
 	# Start a new game on load
@@ -638,7 +638,7 @@ func comp1_change_and_bet():
 		print ("bi3comp was : ", bi3comp)
 		# Remove the card from the game deck, so it can't be duplicated
 		var card_to_remove_from_deck3comp = game_deck.find(bi3comp)
-		game_deck.remove(card_to_remove_from_deck3comp)
+		game_deck.remove_at(card_to_remove_from_deck3comp)
 		# Insert the new card into the player hand
 		hand2[0] = bi3comp
 		print ("compcard was : ",0)
@@ -657,7 +657,7 @@ func comp1_change_and_bet():
 		print ("bi32comp was : ", bi32comp)
 		# Remove from the game deck
 		var card_to_remove_from_deck32comp = game_deck.find(bi32comp)
-		game_deck.remove(card_to_remove_from_deck32comp)
+		game_deck.remove_at(card_to_remove_from_deck32comp)
 		# Insert the new card
 		hand2[1] = bi32comp
 		print ("compcard2 was : ",1)
@@ -676,7 +676,7 @@ func comp1_change_and_bet():
 		print ("bi33comp was : ", bi33comp)
 		# Remove the card from the game deck
 		var card_to_remove_from_deck33comp = game_deck.find(bi33comp)
-		game_deck.remove(card_to_remove_from_deck33comp)
+		game_deck.remove_at(card_to_remove_from_deck33comp)
 		# Insert the new card
 		hand2[2] = bi33comp
 		print ("compcard3 was : ",3)
@@ -695,7 +695,7 @@ func comp1_change_and_bet():
 		print ("bi34comp was : ", bi34comp)
 		# Remove the card from the game deck
 		var card_to_remove_from_deck34comp = game_deck.find(bi34comp)
-		game_deck.remove(card_to_remove_from_deck34comp)
+		game_deck.remove_at(card_to_remove_from_deck34comp)
 		# Insert the new card
 		hand2[3] = bi34comp
 		print ("compcard4 was : ",4)
@@ -714,7 +714,7 @@ func comp1_change_and_bet():
 		print ("bi35comp was : ", bi35comp)
 		# Remove the card from the game deck
 		var card_to_remove_from_deck35comp = game_deck.find(bi35comp)
-		game_deck.remove(card_to_remove_from_deck35comp)
+		game_deck.remove_at(card_to_remove_from_deck35comp)
 		# Insert the new card
 		hand2[4] = bi35comp
 		print ("compcard5 was : ",5)
@@ -838,7 +838,7 @@ func make_player_hand():
 		bi = values[vls[i]]+","+suites2[sts[i]]
 		print ("bi was : ", bi)
 		var card_to_remove_from_deck = game_deck.find(bi)
-		game_deck.remove(card_to_remove_from_deck)
+		game_deck.remove_at(card_to_remove_from_deck)
 		hand[i] = bi
 	hand1 = hand
 	# Could have done the last bit of for loop as "hand1[i] = bi" instead of using hand as a go between
@@ -894,7 +894,7 @@ func change_player_cards():
 		print ("bi3 was : ", bi3)
 		# Remove the card from the game deck, so it can't be duplicated
 		var card_to_remove_from_deck3 = game_deck.find(bi3)
-		game_deck.remove(card_to_remove_from_deck3)
+		game_deck.remove_at(card_to_remove_from_deck3)
 		# Insert the new card into the player hand
 		hand1[0] = bi3
 		print ("card was : ",0)
@@ -913,7 +913,7 @@ func change_player_cards():
 		print ("bi32 was : ", bi32)
 		# Remove from the game deck
 		var card_to_remove_from_deck32 = game_deck.find(bi32)
-		game_deck.remove(card_to_remove_from_deck32)
+		game_deck.remove_at(card_to_remove_from_deck32)
 		# Insert the new card
 		hand1[1] = bi32
 		print ("card2 was : ",1)
@@ -932,7 +932,7 @@ func change_player_cards():
 		print ("bi33 was : ", bi33)
 		# Remove the card from the game deck
 		var card_to_remove_from_deck33 = game_deck.find(bi33)
-		game_deck.remove(card_to_remove_from_deck33)
+		game_deck.remove_at(card_to_remove_from_deck33)
 		# Insert the new card
 		hand1[2] = bi33
 		print ("card3 was : ",3)
@@ -951,7 +951,7 @@ func change_player_cards():
 		print ("bi34 was : ", bi34)
 		# Remove the card from the game deck
 		var card_to_remove_from_deck34 = game_deck.find(bi34)
-		game_deck.remove(card_to_remove_from_deck34)
+		game_deck.remove_at(card_to_remove_from_deck34)
 		# Insert the new card
 		hand1[3] = bi34
 		print ("card4 was : ",4)
@@ -970,7 +970,7 @@ func change_player_cards():
 		print ("bi35 was : ", bi35)
 		# Remove the card from the game deck
 		var card_to_remove_from_deck35 = game_deck.find(bi35)
-		game_deck.remove(card_to_remove_from_deck35)
+		game_deck.remove_at(card_to_remove_from_deck35)
 		# Insert the new card
 		hand1[4] = bi35
 		print ("card5 was : ",5)
@@ -1011,7 +1011,7 @@ func make_comp1_hand():
 		bi2 = values[vls2[i]]+","+suites2[sts2[i]]
 		print ("bi2 was : ", bi2)
 		var card_to_remove_from_deck2 = game_deck.find(bi2)
-		game_deck.remove(card_to_remove_from_deck2)
+		game_deck.remove_at(card_to_remove_from_deck2)
 		hand22[i] = bi2
 	hand2 = hand22
 	# Put comp1 cards "face down" for now, by hiding them behind other textures
@@ -1150,7 +1150,7 @@ func rank_the_(hand_sent):
 		if reps_array.count(2)==2:
 			# Two pair
 			#print ("two pair : ", ranks[2])
-			return [ranks[2], sorted_vals, reps_array.find(2), reps_array.find_last(2)]
+			return [ranks[2], sorted_vals, reps_array.find(2), reps_array.rfind(2)]
 		if reps_array.count(2)==1:
 			# One pair
 			#print ("one pair : ", ranks[1])

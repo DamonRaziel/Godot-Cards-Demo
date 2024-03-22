@@ -1,12 +1,12 @@
 [gd_scene load_steps=8 format=2]
 
-[ext_resource path="res://Fonts/Cardo Font/CardoFont60.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Fonts/Cardo Font/CardoFont60.tres" type="FontFile" id=1]
 [ext_resource path="res://Scripts/HoldEm.gd" type="Script" id=2]
-[ext_resource path="res://ImagesOther/TableTextureGreen.png" type="Texture" id=3]
-[ext_resource path="res://CardImages/CardsBack.png" type="Texture" id=4]
-[ext_resource path="res://Fonts/Cardo Font/CardoFont30.tres" type="DynamicFont" id=5]
-[ext_resource path="res://ImagesOther/TableTextureOrange.png" type="Texture" id=6]
-[ext_resource path="res://Fonts/Cardo Font/CardoFont45.tres" type="DynamicFont" id=7]
+[ext_resource path="res://ImagesOther/TableTextureGreen.png" type="Texture2D" id=3]
+[ext_resource path="res://CardImages/CardsBack.png" type="Texture2D" id=4]
+[ext_resource path="res://Fonts/Cardo Font/CardoFont30.tres" type="FontFile" id=5]
+[ext_resource path="res://ImagesOther/TableTextureOrange.png" type="Texture2D" id=6]
+[ext_resource path="res://Fonts/Cardo Font/CardoFont45.tres" type="FontFile" id=7]
 
 [node name="MainContainer" type="Control"]
 anchor_right = 1.0
@@ -25,131 +25,131 @@ __meta__ = {
 }
 
 [node name="DeckStuff" type="Control" parent="."]
-margin_left = 1565.71
-margin_top = 778.029
-margin_right = 1605.71
-margin_bottom = 818.029
+offset_left = 1565.71
+offset_top = 778.029
+offset_right = 1605.71
+offset_bottom = 818.029
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="DeckCard1" type="TextureRect" parent="DeckStuff"]
-margin_left = 6.10352e-05
-margin_top = 34.0811
-margin_right = 154.0
-margin_bottom = 248.081
+offset_left = 6.10352e-05
+offset_top = 34.0811
+offset_right = 154.0
+offset_bottom = 248.081
 texture = ExtResource( 4 )
 expand = true
 
 [node name="DeckCard2" type="TextureRect" parent="DeckStuff"]
-margin_left = 34.6821
-margin_top = 34.0811
-margin_right = 188.682
-margin_bottom = 248.081
+offset_left = 34.6821
+offset_top = 34.0811
+offset_right = 188.682
+offset_bottom = 248.081
 texture = ExtResource( 4 )
 expand = true
 
 [node name="DeckCard3" type="TextureRect" parent="DeckStuff"]
-margin_left = 69.631
-margin_top = 34.0811
-margin_right = 223.631
-margin_bottom = 248.081
+offset_left = 69.631
+offset_top = 34.0811
+offset_right = 223.631
+offset_bottom = 248.081
 texture = ExtResource( 4 )
 expand = true
 
 [node name="DeckCard4" type="TextureRect" parent="DeckStuff"]
-margin_left = 103.788
-margin_top = 34.0811
-margin_right = 257.788
-margin_bottom = 248.081
+offset_left = 103.788
+offset_top = 34.0811
+offset_right = 257.788
+offset_bottom = 248.081
 texture = ExtResource( 4 )
 expand = true
 
 [node name="DeckCard5" type="TextureRect" parent="DeckStuff"]
-margin_left = 136.359
-margin_top = 34.0811
-margin_right = 290.359
-margin_bottom = 248.081
+offset_left = 136.359
+offset_top = 34.0811
+offset_right = 290.359
+offset_bottom = 248.081
 texture = ExtResource( 4 )
 expand = true
 
 [node name="DeckCardsLabel" type="Label" parent="DeckStuff"]
-margin_top = -33.833
-margin_right = 189.0
-margin_bottom = 36.167
-custom_fonts/font = ExtResource( 7 )
+offset_top = -33.833
+offset_right = 189.0
+offset_bottom = 36.167
+theme_override_fonts/font = ExtResource( 7 )
 text = "Deck Cards"
 
 [node name="BurntCardsStuff" type="Control" parent="."]
-margin_left = 1560.56
-margin_top = 469.723
-margin_right = 1600.56
-margin_bottom = 509.723
+offset_left = 1560.56
+offset_top = 469.723
+offset_right = 1600.56
+offset_bottom = 509.723
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="BurntCard1" type="TextureRect" parent="BurntCardsStuff"]
-margin_left = 6.10352e-05
-margin_top = 34.0811
-margin_right = 154.0
-margin_bottom = 248.081
+offset_left = 6.10352e-05
+offset_top = 34.0811
+offset_right = 154.0
+offset_bottom = 248.081
 texture = ExtResource( 4 )
 expand = true
 
 [node name="BurntCard2" type="TextureRect" parent="BurntCardsStuff"]
-margin_left = 34.6821
-margin_top = 34.0811
-margin_right = 188.682
-margin_bottom = 248.081
+offset_left = 34.6821
+offset_top = 34.0811
+offset_right = 188.682
+offset_bottom = 248.081
 texture = ExtResource( 4 )
 expand = true
 
 [node name="BurntCard3" type="TextureRect" parent="BurntCardsStuff"]
-margin_left = 69.631
-margin_top = 34.0811
-margin_right = 223.631
-margin_bottom = 248.081
+offset_left = 69.631
+offset_top = 34.0811
+offset_right = 223.631
+offset_bottom = 248.081
 texture = ExtResource( 4 )
 expand = true
 
 [node name="BurntCard4" type="TextureRect" parent="BurntCardsStuff"]
-margin_left = 103.788
-margin_top = 34.0811
-margin_right = 257.788
-margin_bottom = 248.081
+offset_left = 103.788
+offset_top = 34.0811
+offset_right = 257.788
+offset_bottom = 248.081
 texture = ExtResource( 4 )
 expand = true
 
 [node name="BurntCard5" type="TextureRect" parent="BurntCardsStuff"]
-margin_left = 136.359
-margin_top = 34.0811
-margin_right = 290.359
-margin_bottom = 248.081
+offset_left = 136.359
+offset_top = 34.0811
+offset_right = 290.359
+offset_bottom = 248.081
 texture = ExtResource( 4 )
 expand = true
 
 [node name="BurntCardLabel" type="Label" parent="BurntCardsStuff"]
-margin_top = -38.593
-margin_right = 197.0
-margin_bottom = 31.407
-custom_fonts/font = ExtResource( 7 )
+offset_top = -38.593
+offset_right = 197.0
+offset_bottom = 31.407
+theme_override_fonts/font = ExtResource( 7 )
 text = "Burnt Cards"
 
 [node name="PlayerStuff" type="Control" parent="."]
-margin_left = 16.4392
-margin_top = 698.058
-margin_right = 56.4392
-margin_bottom = 738.058
+offset_left = 16.4392
+offset_top = 698.058
+offset_right = 56.4392
+offset_bottom = 738.058
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="PlayerCard1" type="TextureRect" parent="PlayerStuff"]
-margin_left = 6.10352e-05
-margin_top = 34.0811
-margin_right = 154.0
-margin_bottom = 248.081
+offset_left = 6.10352e-05
+offset_top = 34.0811
+offset_right = 154.0
+offset_bottom = 248.081
 texture = ExtResource( 4 )
 expand = true
 __meta__ = {
@@ -158,17 +158,17 @@ __meta__ = {
 
 [node name="PlayerCard1Label" type="Label" parent="PlayerStuff/PlayerCard1"]
 anchor_right = 1.0
-margin_bottom = 70.0
-custom_fonts/font = ExtResource( 7 )
+offset_bottom = 70.0
+theme_override_fonts/font = ExtResource( 7 )
 text = "10"
 align = 1
 valign = 1
 
 [node name="PlayerCard2" type="TextureRect" parent="PlayerStuff"]
-margin_left = 176.7
-margin_top = 34.0811
-margin_right = 330.7
-margin_bottom = 248.081
+offset_left = 176.7
+offset_top = 34.0811
+offset_right = 330.7
+offset_bottom = 248.081
 texture = ExtResource( 4 )
 expand = true
 __meta__ = {
@@ -177,46 +177,46 @@ __meta__ = {
 
 [node name="PlayerCard2Label" type="Label" parent="PlayerStuff/PlayerCard2"]
 anchor_right = 1.0
-margin_bottom = 70.0
-custom_fonts/font = ExtResource( 7 )
+offset_bottom = 70.0
+theme_override_fonts/font = ExtResource( 7 )
 text = "10"
 align = 1
 valign = 1
 
 [node name="PlayerCardsLabel" type="Label" parent="PlayerStuff"]
-margin_top = -120.0
-margin_right = 189.0
-margin_bottom = -50.0
-custom_fonts/font = ExtResource( 7 )
+offset_top = -120.0
+offset_right = 189.0
+offset_bottom = -50.0
+theme_override_fonts/font = ExtResource( 7 )
 text = "Player Cards"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="PlayerMoneyLabel" type="Label" parent="PlayerStuff"]
-margin_top = -40.0
-margin_right = 277.0
-margin_bottom = 4.0
-custom_fonts/font = ExtResource( 5 )
+offset_top = -40.0
+offset_right = 277.0
+offset_bottom = 4.0
+theme_override_fonts/font = ExtResource( 5 )
 text = "Player Money : 1000000"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Comp1Stuff" type="Control" parent="."]
-margin_left = 1544.41
-margin_top = 132.837
-margin_right = 1584.41
-margin_bottom = 172.838
+offset_left = 1544.41
+offset_top = 132.837
+offset_right = 1584.41
+offset_bottom = 172.838
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Comp1Card1" type="TextureRect" parent="Comp1Stuff"]
-margin_left = 4.76007
-margin_top = 34.0811
-margin_right = 158.76
-margin_bottom = 248.081
+offset_left = 4.76007
+offset_top = 34.0811
+offset_right = 158.76
+offset_bottom = 248.081
 texture = ExtResource( 4 )
 expand = true
 __meta__ = {
@@ -225,8 +225,8 @@ __meta__ = {
 
 [node name="Comp1Card1Label" type="Label" parent="Comp1Stuff/Comp1Card1"]
 anchor_right = 1.0
-margin_bottom = 70.0
-custom_fonts/font = ExtResource( 7 )
+offset_bottom = 70.0
+theme_override_fonts/font = ExtResource( 7 )
 text = "10"
 align = 1
 valign = 1
@@ -244,10 +244,10 @@ __meta__ = {
 }
 
 [node name="Comp1Card2" type="TextureRect" parent="Comp1Stuff"]
-margin_left = 181.46
-margin_top = 34.0811
-margin_right = 335.46
-margin_bottom = 248.081
+offset_left = 181.46
+offset_top = 34.0811
+offset_right = 335.46
+offset_bottom = 248.081
 texture = ExtResource( 4 )
 expand = true
 __meta__ = {
@@ -256,8 +256,8 @@ __meta__ = {
 
 [node name="Comp1Card2Label" type="Label" parent="Comp1Stuff/Comp1Card2"]
 anchor_right = 1.0
-margin_bottom = 70.0
-custom_fonts/font = ExtResource( 7 )
+offset_bottom = 70.0
+theme_override_fonts/font = ExtResource( 7 )
 text = "10"
 align = 1
 valign = 1
@@ -272,19 +272,19 @@ __meta__ = {
 }
 
 [node name="Comp1CardsLabel" type="Label" parent="Comp1Stuff"]
-margin_left = -20.3846
-margin_top = -114.168
-margin_right = 329.615
-margin_bottom = -44.1683
-custom_fonts/font = ExtResource( 7 )
+offset_left = -20.3846
+offset_top = -114.168
+offset_right = 329.615
+offset_bottom = -44.1683
+theme_override_fonts/font = ExtResource( 7 )
 text = "Computer 1 Cards"
 
 [node name="Comp1MoneyLabel" type="Label" parent="Comp1Stuff"]
-margin_left = -20.3846
-margin_top = -34.1682
-margin_right = 360.615
-margin_bottom = 9.83176
-custom_fonts/font = ExtResource( 5 )
+offset_left = -20.3846
+offset_top = -34.1682
+offset_right = 360.615
+offset_bottom = 9.83176
+theme_override_fonts/font = ExtResource( 5 )
 text = "Computer 1 Money : 1000000"
 
 [node name="Comp1DecisionTimer" type="Timer" parent="Comp1Stuff"]
@@ -296,19 +296,19 @@ wait_time = 2.0
 one_shot = true
 
 [node name="CommunityStuff" type="Control" parent="."]
-margin_left = 554.222
-margin_top = 383.786
-margin_right = 594.222
-margin_bottom = 423.787
+offset_left = 554.222
+offset_top = 383.786
+offset_right = 594.222
+offset_bottom = 423.787
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="CommCard1" type="TextureRect" parent="CommunityStuff"]
-margin_left = 6.10352e-05
-margin_top = 34.0811
-margin_right = 154.0
-margin_bottom = 248.081
+offset_left = 6.10352e-05
+offset_top = 34.0811
+offset_right = 154.0
+offset_bottom = 248.081
 texture = ExtResource( 4 )
 expand = true
 __meta__ = {
@@ -317,8 +317,8 @@ __meta__ = {
 
 [node name="CommCard1Label" type="Label" parent="CommunityStuff/CommCard1"]
 anchor_right = 1.0
-margin_bottom = 70.0
-custom_fonts/font = ExtResource( 7 )
+offset_bottom = 70.0
+theme_override_fonts/font = ExtResource( 7 )
 text = "10"
 align = 1
 valign = 1
@@ -336,10 +336,10 @@ __meta__ = {
 }
 
 [node name="CommCard2" type="TextureRect" parent="CommunityStuff"]
-margin_left = 176.7
-margin_top = 34.0811
-margin_right = 330.7
-margin_bottom = 248.081
+offset_left = 176.7
+offset_top = 34.0811
+offset_right = 330.7
+offset_bottom = 248.081
 texture = ExtResource( 4 )
 expand = true
 __meta__ = {
@@ -348,8 +348,8 @@ __meta__ = {
 
 [node name="CommCard2Label" type="Label" parent="CommunityStuff/CommCard2"]
 anchor_right = 1.0
-margin_bottom = 70.0
-custom_fonts/font = ExtResource( 7 )
+offset_bottom = 70.0
+theme_override_fonts/font = ExtResource( 7 )
 text = "10"
 align = 1
 valign = 1
@@ -364,10 +364,10 @@ __meta__ = {
 }
 
 [node name="CommCard3" type="TextureRect" parent="CommunityStuff"]
-margin_left = 354.35
-margin_top = 34.0811
-margin_right = 508.35
-margin_bottom = 248.081
+offset_left = 354.35
+offset_top = 34.0811
+offset_right = 508.35
+offset_bottom = 248.081
 texture = ExtResource( 4 )
 expand = true
 __meta__ = {
@@ -376,8 +376,8 @@ __meta__ = {
 
 [node name="CommCard3Label" type="Label" parent="CommunityStuff/CommCard3"]
 anchor_right = 1.0
-margin_bottom = 70.0
-custom_fonts/font = ExtResource( 7 )
+offset_bottom = 70.0
+theme_override_fonts/font = ExtResource( 7 )
 text = "10"
 align = 1
 valign = 1
@@ -392,10 +392,10 @@ __meta__ = {
 }
 
 [node name="CommCard4" type="TextureRect" parent="CommunityStuff"]
-margin_left = 536.21
-margin_top = 34.0811
-margin_right = 690.21
-margin_bottom = 248.081
+offset_left = 536.21
+offset_top = 34.0811
+offset_right = 690.21
+offset_bottom = 248.081
 texture = ExtResource( 4 )
 expand = true
 __meta__ = {
@@ -404,8 +404,8 @@ __meta__ = {
 
 [node name="CommCard4Label" type="Label" parent="CommunityStuff/CommCard4"]
 anchor_right = 1.0
-margin_bottom = 70.0
-custom_fonts/font = ExtResource( 7 )
+offset_bottom = 70.0
+theme_override_fonts/font = ExtResource( 7 )
 text = "10"
 align = 1
 valign = 1
@@ -423,10 +423,10 @@ __meta__ = {
 }
 
 [node name="CommCard5" type="TextureRect" parent="CommunityStuff"]
-margin_left = 722.367
-margin_top = 34.0811
-margin_right = 876.367
-margin_bottom = 248.081
+offset_left = 722.367
+offset_top = 34.0811
+offset_right = 876.367
+offset_bottom = 248.081
 texture = ExtResource( 4 )
 expand = true
 __meta__ = {
@@ -435,8 +435,8 @@ __meta__ = {
 
 [node name="CommCard5Label" type="Label" parent="CommunityStuff/CommCard5"]
 anchor_right = 1.0
-margin_bottom = 70.0
-custom_fonts/font = ExtResource( 7 )
+offset_bottom = 70.0
+theme_override_fonts/font = ExtResource( 7 )
 text = "10"
 align = 1
 valign = 1
@@ -451,11 +451,11 @@ __meta__ = {
 }
 
 [node name="CommCardsLabel" type="Label" parent="CommunityStuff"]
-margin_left = -375.066
-margin_top = 40.1292
-margin_right = -19.0665
-margin_bottom = 110.129
-custom_fonts/font = ExtResource( 7 )
+offset_left = -375.066
+offset_top = 40.1292
+offset_right = -19.0665
+offset_bottom = 110.129
+theme_override_fonts/font = ExtResource( 7 )
 text = "Community Cards"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -470,10 +470,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -926.0
-margin_top = -161.0
-margin_right = 926.0
-margin_bottom = 161.0
+offset_left = -926.0
+offset_top = -161.0
+offset_right = 926.0
+offset_bottom = 161.0
 texture = ExtResource( 6 )
 expand = true
 __meta__ = {
@@ -484,9 +484,9 @@ __meta__ = {
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-margin_top = -134.29
-margin_bottom = -64.2896
-custom_fonts/font = ExtResource( 7 )
+offset_top = -134.29
+offset_bottom = -64.2896
+theme_override_fonts/font = ExtResource( 7 )
 text = "Player Cards Were : "
 align = 1
 valign = 1
@@ -498,9 +498,9 @@ __meta__ = {
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-margin_top = -47.5
-margin_bottom = 47.5
-custom_fonts/font = ExtResource( 1 )
+offset_top = -47.5
+offset_bottom = 47.5
+theme_override_fonts/font = ExtResource( 1 )
 text = "And the winner was : "
 align = 1
 valign = 1
@@ -509,9 +509,9 @@ valign = 1
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-margin_top = 68.6064
-margin_bottom = 138.606
-custom_fonts/font = ExtResource( 7 )
+offset_top = 68.6064
+offset_bottom = 138.606
+theme_override_fonts/font = ExtResource( 7 )
 text = "Winning hand was : "
 align = 1
 valign = 1
@@ -523,11 +523,11 @@ __meta__ = {
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-margin_left = 529.277
-margin_top = -490.153
-margin_right = -1061.72
-margin_bottom = -420.153
-custom_fonts/font = ExtResource( 7 )
+offset_left = 529.277
+offset_top = -490.153
+offset_right = -1061.72
+offset_bottom = -420.153
+theme_override_fonts/font = ExtResource( 7 )
 text = "Bet Cost : 500"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -537,11 +537,11 @@ __meta__ = {
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-margin_left = 529.277
-margin_top = -410.153
-margin_right = -997.723
-margin_bottom = -340.153
-custom_fonts/font = ExtResource( 7 )
+offset_left = 529.277
+offset_top = -410.153
+offset_right = -997.723
+offset_bottom = -340.153
+theme_override_fonts/font = ExtResource( 7 )
 text = "New Card Cost : 200"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -551,11 +551,11 @@ __meta__ = {
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-margin_left = 529.277
-margin_top = -330.153
-margin_right = -1061.72
-margin_bottom = -260.153
-custom_fonts/font = ExtResource( 7 )
+offset_left = 529.277
+offset_top = -330.153
+offset_right = -1061.72
+offset_bottom = -260.153
+theme_override_fonts/font = ExtResource( 7 )
 text = "Current Pot : 1000"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -565,50 +565,50 @@ __meta__ = {
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-margin_left = 529.277
-margin_top = -250.153
-margin_right = -1061.72
-margin_bottom = -180.153
-custom_fonts/font = ExtResource( 7 )
+offset_left = 529.277
+offset_top = -250.153
+offset_right = -1061.72
+offset_bottom = -180.153
+theme_override_fonts/font = ExtResource( 7 )
 text = "Current Round : 1"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="ButtonsContainer" type="Control" parent="."]
-margin_right = 40.0
-margin_bottom = 40.0
+offset_right = 40.0
+offset_bottom = 40.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="BackToMainButton" type="Button" parent="ButtonsContainer"]
-margin_left = 50.0
-margin_top = 50.0
-margin_right = 230.0
-margin_bottom = 126.0
-custom_fonts/font = ExtResource( 7 )
+offset_left = 50.0
+offset_top = 50.0
+offset_right = 230.0
+offset_bottom = 126.0
+theme_override_fonts/font = ExtResource( 7 )
 text = "Main Menu"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="NewGameButton" type="Button" parent="ButtonsContainer"]
-margin_left = 50.0
-margin_top = 176.0
-margin_right = 287.0
-margin_bottom = 252.0
-custom_fonts/font = ExtResource( 7 )
+offset_left = 50.0
+offset_top = 176.0
+offset_right = 287.0
+offset_bottom = 252.0
+theme_override_fonts/font = ExtResource( 7 )
 text = "New Game"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="ReallyBackToMainBG" type="TextureRect" parent="ButtonsContainer"]
-margin_left = 337.718
-margin_top = 50.0
-margin_right = 534.718
-margin_bottom = 252.0
+offset_left = 337.718
+offset_top = 50.0
+offset_right = 534.718
+offset_bottom = 252.0
 texture = ExtResource( 6 )
 expand = true
 __meta__ = {
@@ -616,9 +616,9 @@ __meta__ = {
 }
 
 [node name="ExtraTab" type="TextureRect" parent="ButtonsContainer/ReallyBackToMainBG"]
-margin_left = -50.0
-margin_right = 3.8147e-06
-margin_bottom = 76.0
+offset_left = -50.0
+offset_right = 3.8147e-06
+offset_bottom = 76.0
 texture = ExtResource( 6 )
 expand = true
 __meta__ = {
@@ -630,11 +630,11 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -52.5
-margin_top = -101.0
-margin_right = 52.5
-margin_bottom = -31.0
-custom_fonts/font = ExtResource( 7 )
+offset_left = -52.5
+offset_top = -101.0
+offset_right = 52.5
+offset_bottom = -31.0
+theme_override_fonts/font = ExtResource( 7 )
 text = "Really?"
 align = 1
 valign = 1
@@ -643,26 +643,26 @@ __meta__ = {
 }
 
 [node name="YesMainButton" type="Button" parent="ButtonsContainer/ReallyBackToMainBG"]
-margin_left = 25.0
-margin_top = 126.0
-margin_right = 86.0
-margin_bottom = 202.0
-custom_fonts/font = ExtResource( 7 )
+offset_left = 25.0
+offset_top = 126.0
+offset_right = 86.0
+offset_bottom = 202.0
+theme_override_fonts/font = ExtResource( 7 )
 text = "Yes"
 
 [node name="NoMainButton" type="Button" parent="ButtonsContainer/ReallyBackToMainBG"]
-margin_left = 111.0
-margin_top = 126.0
-margin_right = 172.0
-margin_bottom = 202.0
-custom_fonts/font = ExtResource( 7 )
+offset_left = 111.0
+offset_top = 126.0
+offset_right = 172.0
+offset_bottom = 202.0
+theme_override_fonts/font = ExtResource( 7 )
 text = "No"
 
 [node name="ReallyNewGame" type="TextureRect" parent="ButtonsContainer"]
-margin_left = 337.718
-margin_top = 50.0
-margin_right = 534.718
-margin_bottom = 252.0
+offset_left = 337.718
+offset_top = 50.0
+offset_right = 534.718
+offset_bottom = 252.0
 texture = ExtResource( 6 )
 expand = true
 __meta__ = {
@@ -670,9 +670,9 @@ __meta__ = {
 }
 
 [node name="ExtraTabNG" type="TextureRect" parent="ButtonsContainer/ReallyNewGame"]
-margin_left = -50.0
-margin_top = 126.0
-margin_bottom = 202.0
+offset_left = -50.0
+offset_top = 126.0
+offset_bottom = 202.0
 texture = ExtResource( 6 )
 expand = true
 __meta__ = {
@@ -684,11 +684,11 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -52.5
-margin_top = -101.0
-margin_right = 52.5
-margin_bottom = -31.0
-custom_fonts/font = ExtResource( 7 )
+offset_left = -52.5
+offset_top = -101.0
+offset_right = 52.5
+offset_bottom = -31.0
+theme_override_fonts/font = ExtResource( 7 )
 text = "Really?"
 align = 1
 valign = 1
@@ -697,52 +697,52 @@ __meta__ = {
 }
 
 [node name="YesNGButton" type="Button" parent="ButtonsContainer/ReallyNewGame"]
-margin_left = 25.0
-margin_top = 126.0
-margin_right = 86.0
-margin_bottom = 202.0
-custom_fonts/font = ExtResource( 7 )
+offset_left = 25.0
+offset_top = 126.0
+offset_right = 86.0
+offset_bottom = 202.0
+theme_override_fonts/font = ExtResource( 7 )
 text = "Yes"
 
 [node name="NoNGButton" type="Button" parent="ButtonsContainer/ReallyNewGame"]
-margin_left = 111.0
-margin_top = 126.0
-margin_right = 172.0
-margin_bottom = 202.0
-custom_fonts/font = ExtResource( 7 )
+offset_left = 111.0
+offset_top = 126.0
+offset_right = 172.0
+offset_bottom = 202.0
+theme_override_fonts/font = ExtResource( 7 )
 text = "No"
 
 [node name="PlayerButtons" type="Control" parent="ButtonsContainer"]
-margin_left = 57.0
-margin_top = 969.908
-margin_right = 97.0
-margin_bottom = 1009.91
+offset_left = 57.0
+offset_top = 969.908
+offset_right = 97.0
+offset_bottom = 1009.91
 
 [node name="PlayerFoldButton" type="Button" parent="ButtonsContainer/PlayerButtons"]
-margin_left = 330.553
-margin_top = -221.041
-margin_right = 475.553
-margin_bottom = -171.041
-custom_fonts/font = ExtResource( 5 )
+offset_left = 330.553
+offset_top = -221.041
+offset_right = 475.553
+offset_bottom = -171.041
+theme_override_fonts/font = ExtResource( 5 )
 text = "Fold"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="PlayerBetButton" type="Button" parent="ButtonsContainer/PlayerButtons"]
-margin_left = 330.553
-margin_top = -121.041
-margin_right = 475.553
-margin_bottom = -71.041
-custom_fonts/font = ExtResource( 5 )
+offset_left = 330.553
+offset_top = -121.041
+offset_right = 475.553
+offset_bottom = -71.041
+theme_override_fonts/font = ExtResource( 5 )
 text = "Withdraw"
 
 [node name="PlayerPlaceButton" type="Button" parent="ButtonsContainer/PlayerButtons"]
-margin_left = 330.553
-margin_top = -21.0411
-margin_right = 475.553
-margin_bottom = 28.9589
-custom_fonts/font = ExtResource( 5 )
+offset_left = 330.553
+offset_top = -21.0411
+offset_right = 475.553
+offset_bottom = 28.9589
+theme_override_fonts/font = ExtResource( 5 )
 text = "Place"
 [connection signal="timeout" from="Comp1Stuff/Comp1DecisionTimer" to="." method="_on_Comp1DecisionTimer_timeout"]
 [connection signal="timeout" from="Comp1Stuff/Comp1GeneralDelayTimer" to="." method="_on_Comp1GeneralDelayTimer_timeout"]
