@@ -10,4 +10,4 @@ At the moment there are three game types; single hand 5 card stud, 5 card stud w
 
 Video demonstration available on youtube https://youtu.be/lpo8yN29eMM
 
-
+Updated to Godot 4.2.
